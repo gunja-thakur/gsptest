@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Dashboard - NEP</title>
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+        <link rel="preload" href="css/style.css" as="style"/>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark">
+            <!-- Navbar Brand-->
+			<button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fa-solid fa-align-right"></i></button>
+			<div class="logo_inline">
+                                
+                                <div class="logo_text">
+                                   <a href="index.html">
+								   <h5>Examination Control System (NEP)</h5>
+                                  <h6><span>Devi Ahilya Vishwavidyalaya, Indore</span></h6>
+									</a>
+                                 </div>
+                                 </div>
+		 <div class="profile_right">
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-user-tie"></i> Hello User!</a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow" aria-labelledby="navbarDropdown">
+<div class="user_profile_window">
+<div class="profile_box">
+<div class="profile_pic">
+<img src="images/admin_icon.png" class="img-fluid">
+</div>
+<div class="profile_text">
+<h5>Mr. Deepak Dubey </h5>
+<p> Web Designer </p>
+</div>
+</div>
+<div class="button_boxes">
+<a href="#" class="user_guide_btn"> यूजर गाइड   </a>
+<a href="#" class="password_btn"> पासवर्ड बदलें   </a>
+<a href="#" class="logout_btn"> लॉग आउट  </a>
+</div>
+</div>
+
+
+
+                    </div>
+                </li>
+            </ul>
+			</div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+					<div class="logo_box">
+                                  <a href="index.html"><img src="images/DAVV_Logo.png" class="img-fluid" alt=""> </a>   
+                                </div>
+                        <div class="nav">
+                          <!--<a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Masters
+                            </a> -->
+							 
+						 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Masters" aria-expanded="false" aria-controls="Masters">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Masters
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Masters" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Student Master</a>
+                                    <a class="nav-link" href="#">College Master</a>
+<a class="nav-link" href="#">College Course Master </a>		
+<a class="nav-link" href="#">Session Master </a>	
+<a class="nav-link" href="#">Branch Master </a>
+<a class="nav-link" href="#">Subject Master </a>	
+<a class="nav-link" href="#">Add Papers to Semester </a>
+<a class="nav-link" href="#">AddElectivePaper </a>	
+<a class="nav-link" href="#">Student Photo Correction </a>
+<a class="nav-link" href="#">Add Scheme Replica </a>			
+<a class="nav-link" href="#">Assign Branch ElectivePaper </a> 
+</nav>
+</div>
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Enrollment" aria-expanded="false" aria-controls="Enrollment">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Enrollment, Exam Form
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Enrollment" aria-labelledby="headingtwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Enrollment Generation</a>
+                                    <a class="nav-link" href="#">Verify Exam Forms</a>
+</nav>
+</div>
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#DataPorting" aria-expanded="false" aria-controls="DataPorting">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Data Porting
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="DataPorting" aria-labelledby="headingthree" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">For Exam Form Data </a>
+<a class="nav-link" href="#">For Marks Entry </a>
+<a class="nav-link" href="#">For Sessional Data </a>
+<a class="nav-link" href="#">For Revaluation Data </a>
+<a class="nav-link" href="#">To Publish Exam Form Data </a>
+<a class="nav-link" href="#">Exam Form for Portal </a>
+</nav>
+</div>
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#MarksEntry" aria-expanded="false" aria-controls="MarksEntry">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Marks Entry Activities
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="MarksEntry" aria-labelledby="headingfour" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#"> Student Status </a>
+<a class="nav-link" href="#">Reset Wrong Entries  </a>
+<a class="nav-link" href="#">Mark with Held Candidates  </a>
+<a class="nav-link" href="#">Student Remarks  </a>
+<a class="nav-link" href="#">Mark Detained  </a>
+<a class="nav-link" href="#">Bulk Detained  </a>
+</nav>
+</div>
+
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#ResultsProcess" aria-expanded="false" aria-controls="ResultsProcess">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                               Results Process
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="ResultsProcess" aria-labelledby="headingfive" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Process Results </a>
+<a class="nav-link" href="#">Marksheet/TR Generation </a>
+<a class="nav-link" href="#">Process Improvement  </a>
+<a class="nav-link" href="#">General Promotion  </a>
+<a class="nav-link" href="#">Report General Promotion  </a>
+<a class="nav-link" href="#">GP Modify Theory Marks  </a>
+<a class="nav-link" href="#">Modify Result Percentage  </a>
+<a class="nav-link" href="#">Generate Publish Division  </a>
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Revaluation" aria-expanded="false" aria-controls="Revaluation">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                               Revaluation
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Revaluation" aria-labelledby="headingsix" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Apply Reval </a>
+<a class="nav-link" href="#">Process Revaluation  </a>
+<a class="nav-link" href="#">Result Process For Revaluation  </a>
+<a class="nav-link" href="#">Challenge Process  </a>
+<a class="nav-link" href="#">For Revaluation Rollback  </a>
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Reports" aria-expanded="false" aria-controls="Reports">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                               Reports
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Reports" aria-labelledby="headingseven" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">View Reports  </a>
+<a class="nav-link" href="#">Print TR </a>
+<a class="nav-link" href="#">PD No Generation </a>
+<a class="nav-link" href="#">PM No Generation  </a>
+<a class="nav-link" href="#">Print PD/PM  </a>
+<a class="nav-link" href="#">View & Download Scheme  </a>
+<a class="nav-link" href="#">Download Fail Students  </a>
+<a class="nav-link" href="#">Print TR MOOC  </a>
+<a class="nav-link" href="#">Get Scroll Data  </a>
+<a class="nav-link" href="#">Rpt Passed Out Batch  </a>
+<a class="nav-link" href="#">Download Reports  </a>
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#CommitteeDecision" aria-expanded="false" aria-controls="CommitteeDecision">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                               Committee Decision
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="CommitteeDecision" aria-labelledby="headingeight" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Upgrade Branch/College Transfer  </a>
+<a class="nav-link" href="#">Assign UFM Categories  </a>
+ 
+</nav>
+</div>
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#View" aria-expanded="false" aria-controls="View">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                View
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="View" aria-labelledby="headingnine" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#"> Student History </a>
+ 
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Rollback" aria-expanded="false" aria-controls="Rollback">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                               Rollback
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Rollback" aria-labelledby="headingten" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Rollback Result  </a>
+<a class="nav-link" href="#">Rollback Result For Revaluation  </a>
+<a class="nav-link" href="#">Student Migration  </a>
+<a class="nav-link" href="#">Promotion Rollback  </a>
+<a class="nav-link" href="#">Challange Rollback  </a>
+</nav>
+</div>
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Promotion" aria-expanded="false" aria-controls="Promotion">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                               Promotion
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Promotion" aria-labelledby="headingeleven" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Promote Students  </a>
+ 
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#UserRoles" aria-expanded="false" aria-controls="UserRoles">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                User & Roles
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="UserRoles" aria-labelledby="headingtwelve" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Create/Modify User  </a>
+<a class="nav-link" href="#">Assign Roles to Users  </a>	
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Utilities" aria-expanded="false" aria-controls="Utilities">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Utilities
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Utilities" aria-labelledby="headingthirteen" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Change Password  </a>
+<a class="nav-link" href="#"> Database Backup </a>
+</nav>
+</div>
+
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#ManualRecords" aria-expanded="false" aria-controls="ManualRecords">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Manual Records
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="ManualRecords" aria-labelledby="headingfour" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Manual Mising  </a>
+</nav>
+</div>
+
+
+<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#Marksheet" aria-expanded="false" aria-controls="Marksheet">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                Marksheet
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="Marksheet" aria-labelledby="headingfourteen" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+<a class="nav-link" href="#">Serial No Generation  </a>
+<a class="nav-link" href="#">Print Marksheet  </a>
+<a class="nav-link" href="#"> Print Marksheet MOOC </a>
+
+</nav>
+</div>
+ 
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Admin
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+					<div class="pagehead_buttons">
+					<div class="row align-items-center">
+<div class="col-xl-6 col-lg-6">		
+<!-- ======= Page Heading =========== -->
+                        <h1>Page Heading - Form Style</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+							<li class="breadcrumb-item">Form View</li>
+                        </ol>
+					<!--========= Page Heading End ============-->
+</div>						  
+<div class="col-xl-6 col-lg-6">
+<div class="tab_btn_control align_right">
+<a id="" class="tab_btn" href="#">Add</a>
+<a id="" class="tab_btn" href="#">Modify</a>
+<a id="" class="tab_btn" href="#">Delete</a>
+</div> 
+</div> 
+</div> 
+</div> 
+                       
+					
+				 <div class="row">
+                        <div class="col-xl-12 col-lg-12">
+						<div class="card mb-4">
+                                    <div class="card-header">
+									 <i class="fa-solid fa-grip me-1"></i>
+                                      Form View
+								  </div> 
+                                    <div class="card-body">
+<div class="row align-items-center">
+<div class="col-xl-6 col-lg-6">
+<h5>Heading With Button</h5>
+</div>
+<div class="col-xl-6 col-lg-6">
+<div class="tab_btn_control align_right">
+<a id="" class="tab_btn" href="#">Add</a>
+<a id="" class="tab_btn" href="#">Modify</a>
+<a id="" class="tab_btn" href="#">Delete</a>
+</div> 
+</div> 
+</div> 
+ 
+ 
+ 
+									</div>
+									</div>
+									
+
+									</div>
+									</div>               
+						 
+						
+						
+                         
+                    </div>
+                </main>
+                <footer class="py-4 mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy;  Examination Control System (NEP) . <span id="currentYear"></span> .</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                Design and Developed by <a href="#">CRISP</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+		<!-- back to top start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-migrate-3.3.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/odometer.min.js"></script>
+		<script type="text/javascript" src="js/SmoothScroll.min.js"></script>
+        <script type="text/javascript" src="js/backToTop.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="js/Chart.min.js" type="text/javascript"></script>
+        <script src="js/chart-area-demo.js" type="text/javascript"></script>
+        <script src="js/chart-bar-demo.js" type="text/javascript"></script>
+        <script src="js/data-tables.js" type="text/javascript"></script>
+        <script src="js/datatables-simple-demo.js" type="text/javascript"></script>
+		 
+    </body>
+</html>
